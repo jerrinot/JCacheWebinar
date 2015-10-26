@@ -13,18 +13,18 @@ import java.util.List;
  */
 public interface PizzaStoreConnectorI {
 
-    public Customer findCustomerById(long ID);
+    Customer findCustomerById(long ID);
 
-    public Order getOrderById(long ID);
+    Order getOrderById(long ID);
 
-    public List<Long> getOrderIDsForCustomer(long custID);
+    List<Long> getOrderIDsForCustomer(long custID);
 
-    public Customer getOrdersForCustomer(long customerID);
+    Customer getOrdersForCustomer(long customerID);
     
-    public void placeOrder(long customerID, long orderID, Order order);
+    void placeOrder(long customerID, long orderID, Order order);
     
-    public void cancelOrder(long orderID);
+    void cancelOrder(long orderID);
     
-    public void createCustomer(long customerID, Customer customer);
+    void createCustomer(long customerID, Customer customer);
     
 }
